@@ -1,7 +1,7 @@
 git init
 git status
 git add -A
-git commit -m "my first commit"
+git commit -m "before file properties"
 --------------
 what is os module in python
 
@@ -33,13 +33,11 @@ os.rmdir()
 -----------
 file times
 
-import os,time
 print('Filename: ' , "ram.txt")
-print('modified time: ' , time.ctime(os.path.gettime('ram.txt')))
-print('access time: ', time.ctime(os.path.getmtime('ram.txt')))
+print('modified time: ' , time.ctime(os.path.getmtime('ram.txt')))
+print('access time: ', time.ctime(os.path.getatime('ram.txt')))
 print('created time:' , time.ctime(os.path.getctime('ram.txt')))
-print('Size:',os.path.getsize(ram.txt)
-
+print('Size:',os.path.getsize('ram.txt'))
 
 Executing a shell command
 os.system()    
