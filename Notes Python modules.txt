@@ -2,3 +2,89 @@ git init
 git status
 git add -A
 git commit -m "my first commit"
+--------------
+what is os module in python
+
+OS Module in Python with Examples
+The OS module in python provides functions for interacting with the operating system. OS, comes under Python’s standard utility modules. This module provides a portable way of using operating system dependent functionality. The *os* and *os.path* modules include many functions to interact with the file system.
+https://www.geeksforgeeks.org/os-module-python-examples/
+-------------
+Desktop\Python modules
+
+
+----
+import os
+
+os.rename('','')
+os.remove('')
+create folder
+os.mkdir()
+os.chdir()
+.getcwd()
+.rmdir()
+os.listdir('.')
+
+###### create dirctory and delete after some time
+import os
+import time
+os.mkdir()
+time.sleep(4)
+os.rmdir()
+-----------
+file times
+
+import os,time
+print('Filename: ' , "ram.txt")
+print('modified time: ' , time.ctime(os.path.gettime('ram.txt')))
+print('access time: ', time.ctime(os.path.getmtime('ram.txt')))
+print('created time:' , time.ctime(os.path.getctime('ram.txt')))
+print('Size:',os.path.getsize(ram.txt)
+
+
+Executing a shell command
+os.system()    
+
+Get the users environment 
+os.environ()   
+
+#Returns the current working directory.
+os.getcwd()   
+
+Return the real group id of the current process.
+os.getgid()       
+
+Return the current process’s user id.
+os.getuid()    
+
+Returns the real process ID of the current process.
+os.getpid()     
+
+Set the current numeric umask and return the previous umask.
+os.umask(mask)   
+
+Return information identifying the current operating system.
+os.uname()     
+
+Change the root directory of the current process to path.
+os.chroot(path)   
+
+Return a list of the entries in the directory given by path.
+os.listdir(path) 
+
+Create a directory named path with numeric mode mode.
+os.mkdir(path)    
+
+Recursive directory creation function.
+os.makedirs(path)  
+
+Remove (delete) the file path.
+os.remove(path)    
+
+Remove directories recursively.
+os.removedirs(path) 
+
+Rename the file or directory src to dst.
+os.rename(src, dst)  
+
+Remove (delete) the directory path.
+os.rmdir(path)    
